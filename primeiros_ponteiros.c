@@ -14,9 +14,11 @@ int main (void) {
 	if (a > b) {
 		p = &a;
 		*p = *p - 50;
-	} else {
+	} else if (b > a) {
 		p = &b;
 		*p = *p - 50;
+	} else {
+		printf("Números iguais!");
 	}
 	
 	printf ("Novos valores: %d, %d\n", a, b);
