@@ -1,0 +1,4 @@
+O exercício 2 traz dois structs de molde: o "original" no começo do código, e outro dentro da função de preenchimento, que retorna o modelo.
+Já o exercício 3 traz apenas um molde, e tudo que o procedimento de construção de modelos faz é preenchê-lo, sem necessidade de retornar algo.
+A melhor abordagem é a do exercício 3, pois dispensa a redundância de se ter dois moldes, substituindo um deles por algo muito mais leve, que é um ponteiro.
+Por este motivo, a velocidade e o uso de memória do exercício 3 são menores que no exercício 2.
