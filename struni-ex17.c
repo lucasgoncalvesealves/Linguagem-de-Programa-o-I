@@ -52,8 +52,8 @@ void preenche(struct Cor* c) {
 			printf("\nCODIGO CROMATICO\nC = %d\nM = %d\nY = %d\nK = %d\n", c->cs.cyan, c->cs.magenta, c->cs.yellow, c->cs.black);
 			break;
 
-		case 3:
-			printf("Numero errado!");
+		default:
+			printf("Numero errado!\n");
 			break;
 
 	}
