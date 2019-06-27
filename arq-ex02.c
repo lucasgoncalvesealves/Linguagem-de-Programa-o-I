@@ -5,7 +5,7 @@ void main (void) {
 
     char leitura[25];
 
-    FILE* f = fopen("/home/ime/arq-ex01.txt", "r");
+    FILE* f = fopen("arq-ex01.txt", "r");
     for (int i = 0 ; i <= strlen(leitura) ; i++) {
         leitura[i] = fgetc(f);
     };
