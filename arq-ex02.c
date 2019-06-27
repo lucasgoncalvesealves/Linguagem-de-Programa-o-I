@@ -3,13 +3,13 @@
 
 void main (void) {
 
-    char leitura[25];
+    char string[25];
 
     FILE* f = fopen("arq-ex01.txt", "r");
-    for (int i = 0 ; i <= strlen(leitura) ; i++) {
-        leitura[i] = fgetc(f);
+    for (int i = 0 ; i <= strlen(string) ; i++) {
+        string[i] = fgetc(f);
     };
-    printf("%s\n", leitura);
+    printf("%s\n", string);
     fclose(f);
 
 }
