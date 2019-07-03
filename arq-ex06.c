@@ -49,4 +49,7 @@ void main (void) {
 	};
 	fclose(f2);
 
+	//tamanho do arquivo bin: 720 bytes
+	//boa parte disso é lixo criado pelos espaços vazios da string nome
+
 }

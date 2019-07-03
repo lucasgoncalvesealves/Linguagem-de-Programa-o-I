@@ -49,4 +49,7 @@ void main (void) {
 	};
 	fclose(f2);
 
+	//tamanho do arquivo bin: 110 bytes
+	//a string nome tem apenas o tamanho do nome, sem espacos extras
+
 }
