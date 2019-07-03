@@ -1,3 +1,5 @@
+//AVISO: não está compilando! :-(
+
 #include <stdio.h>
 
 struct Caixa {
