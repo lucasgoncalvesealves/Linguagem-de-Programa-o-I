@@ -21,9 +21,9 @@ struct Caixa* contem(struct Caixa* lista, int busca) {
 
 struct Caixa* descarta(struct Caixa* lista, struct Caixa* busca) {
 
-	//struct Caixa c0;
-	//c0.valor = 0;
-	//c0.prox = lista;
+	struct Caixa c0;
+	c0.valor = 0;
+	c0.prox = lista;
 
 	while (lista != NULL) {
 		if (lista->valor == busca->valor) {
