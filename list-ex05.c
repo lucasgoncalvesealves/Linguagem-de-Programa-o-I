@@ -1,5 +1,3 @@
-//AVISO: não está compilando! :-(
-
 #include <stdio.h>
 
 struct Caixa {
@@ -9,13 +7,26 @@ struct Caixa {
 
 };
 
-struct Caixa* remove(struct Caixa* lista, int busca) {
-
-	struct Caixa c0;
-	c0.prox = lista;
+struct Caixa* contem(struct Caixa* lista, int busca) {
 
 	while (lista != NULL) {
-		if (lista->prox->valor == busca) {
+		if (lista->valor == busca) {
+			return lista;
+		}
+		lista = lista->prox;
+	}
+	return NULL;
+
+};
+
+struct Caixa* descarta(struct Caixa* lista, struct Caixa* busca) {
+
+	//struct Caixa c0;
+	//c0.valor = 0;
+	//c0.prox = lista;
+
+	while (lista != NULL) {
+		if (lista->valor == busca->valor) {
 			lista->prox = lista->prox->prox;
 		};
 	};
@@ -56,7 +67,6 @@ void main (void) {
 	printf("Informe o valor a ser removido: ");
 	scanf("%d", &n);
 
-	remove(&c1, n);
-	exibe(&c0);
+	exibe(descarta(&c1, contem(&c1, n)));
 
 }
