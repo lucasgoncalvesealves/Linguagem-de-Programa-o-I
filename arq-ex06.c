@@ -23,10 +23,14 @@ void escreva_pessoa(FILE* f, struct Pessoa* p) {
 };
 
 void leia_pessoa(FILE* f, struct Pessoa* p) {
-	fread(&p->idade, sizeof(int), 1, f);
-	fread(p->nome, sizeof(char), 64, f);
-	p->nome[strlen(p->nome)] = '\0';
-	fread(&p->peso, sizeof(int), 1, f);
+	struct Pessoa* r;
+	r->idade = fread(&p->idade, sizeof(int), 1, f);
+	r->nome = fread(p->nome, sizeof(char), strlen(p->nome), f);
+	r->nome[strlen(p->nome)] = '\0';
+	r->peso = fread(&p->peso, sizeof(int), 1, f);
+	printf("%d", &r->idade);
+	printf("%s", r->nome);
+	printf("%d", &r->peso);
 };
 
 void main (void) {
