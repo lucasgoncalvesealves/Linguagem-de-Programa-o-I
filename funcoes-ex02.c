@@ -21,11 +21,12 @@ void todos_os_primos(max) {
 	if (max <= 2) {
 		printf("nenhum!\n");
 	};
-	for (int i = 1; i <= max; i++) {
+	for (int i = 1; i < max; i++) {
 		if (eh_primo(i) == 1) {
-			printf("%d\n", i);
+			printf("%d, ", i);
 		};
 	};
+	printf("\n");
 };
 
 void main(void) {
