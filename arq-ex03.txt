@@ -1,5 +1,0 @@
-Em ambos os casos, é necessário deixar um espaço livre no vetor string para o terminador.
-Por isso, ao ler ou escrever uma string, é necessário que o intervalo vá de 0 ao comprimento da string,
-de forma que haverá uma "casa" a mais no vetor.
-Isso pode ser verificado na cabeça do comando for dos exercícios 1 e 2:
-for (int i = 0 ; i <= strlen(string) ; i++).
