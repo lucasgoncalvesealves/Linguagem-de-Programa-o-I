@@ -1,4 +1,0 @@
-União discriminada é um método para acessar especificamente um subtipo da union, através de um código.
-Ela é necessária porque C tem tipagem fraca: não há verificação de tipo em tempo de execução ou compilação.
-Consequentemente, no caso de uma union, um subtipo pode ser gravado e lido como se fosse outro.
-A união discriminada serve para eliminar esse risco, acessando diretamente o subtipo desejado.
