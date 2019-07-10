@@ -1,5 +1,0 @@
-Struct é um construtor estilo "E", no qual todos os seus dados são usados.
-Exemplo: uma inscrição em concurso na qual você precisa informar RG, CPF e PIS para que a candidatura seja válida.
-
-Union é um construtor estilo "OU", no qual apenas um de seus dados é usado.
-Exemplo: uma abertura de conta em que basta que você informe seu RG, ou seu CPF, ou seu PIS para se cadastrar.
